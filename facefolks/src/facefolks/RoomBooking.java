@@ -3,6 +3,9 @@ package facefolks;
 import java.util.Scanner;
 public class RoomBooking {
 	String ac,cot,cable,wifi,laundry;
+	static int roomNumber=0;
+	int[] booked=new int[25];
+	static int m=0;
 	public String getAc() {
 		return ac;
 	}
@@ -87,10 +90,9 @@ public class RoomBooking {
 	     System.out.println(cable+" connection enabled");
 	     System.out.println(wifi+" enabled");
 	     System.out.println(laundry+" needed");
-	     int roomNumber=0;
+	     
 		//String registerID=0;
-		System.out.println("Thank you for booking . Your room number is "+ ++roomNumber);
+		
 	}
 	
-
 }

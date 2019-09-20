@@ -56,6 +56,6 @@ public class Customer {
 		System.out.println(proofType);
 		System.out.println(proofId);
 		
-		System.out.println("Thanks for your registering. Your register id is ");
+		System.out.print("Thanks for your registering. Your register id is ");
 	}
 }

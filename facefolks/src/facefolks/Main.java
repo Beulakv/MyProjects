@@ -7,7 +7,7 @@ public class Main {
    
 	 static int registerID=0;
 	 static int roomNumber=0;
-	 
+	// int room[]=new int[25];
 	
 	
 	public static void main(String[] args) throws IOException {
@@ -68,33 +68,15 @@ public class Main {
       i=br.readLine();
 	}while(i.equalsIgnoreCase("Y"));
       
-      do
-      {
-    	  BufferedReader book=new BufferedReader(new InputStreamReader(System.in));
-  		 System.out.println("Booking : \n Please choose the services required ");
-  		 System.out.println("Do you want AC/non-AC(AC/nAC)");
-  		 ac=book.readLine();
-  		 System.out.println("Do you want cot(single/double)");
-  		 cot=book.readLine();
-  		 System.out.println("Do you need With cable connection/without cable connection(C/nC)");
-  		 cable=book.readLine();
-  		 System.out.println("Do you need Wi-Fi or not(W/nW)");
-  		 wifi=book.readLine();
-  		 System.out.println("Do you need laundry service or not(L/nL)");
-  		  laundry = book.readLine();
-  		
-  	     RoomBooking rb=new RoomBooking();
-  	     rb.setAc(ac);
-  	     rb.setCot(cot);
-  	     rb.setCable(cable);
-  	     rb.setWifi(wifi);
-  	     rb.setLaundry(laundry);
-  	     
-  	   System.out.println("Do you want to proceed (Y/N)");
-       i=br.readLine();
-       rb.RoomBooking();
-      }while(i.equalsIgnoreCase("n"));
-	
+      
+      int menu;
+      
+      //menu=Integer.parseInt(br.readLine());
+      Menu mn=new Menu();
+      mn.menu();
+      
+ 
+      //mn.setRoomnumber(roomNumber);
 	}
 	 
 	 
