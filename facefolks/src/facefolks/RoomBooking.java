@@ -3,6 +3,16 @@ package facefolks;
 import java.util.Scanner;
 public class RoomBooking {
 	String ac,cot,cable,wifi,laundry;
+	int date;
+	public int getDate() {
+		return date;
+	}
+	public void setDate(int date) {
+		this.date = date;
+	}
+
+
+
 	static int roomNumber=0;
 	int[] booked=new int[25];
 	static int m=0;
@@ -90,9 +100,15 @@ public class RoomBooking {
 	     System.out.println(cable+" connection enabled");
 	     System.out.println(wifi+" enabled");
 	     System.out.println(laundry+" needed");
+	     //System.out.println(date+" date of booking");
 	     
 		//String registerID=0;
 		
+	}
+	void viewbooking()
+	{
+	   
+	   
 	}
 	
 }
