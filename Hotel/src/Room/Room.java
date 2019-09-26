@@ -13,12 +13,12 @@ public class Room {
 	 String laundry;
 	public static int datearr[]=new int[25];
 	public static int roomarr[]=new int[25];
-	static int ind=0;
+	public static int ind=0;
 	int book;
 	 
 	 public static int q=0;
 	 public static int roomnum=0;
-	 public static int booked[]=new int[25];
+	// public static int booked[]=new int[25];
 	//public static int[] datearr;
 	 
 	 String i,s,d,e,f;
@@ -95,7 +95,8 @@ public class Room {
 		 ind++;
 		 
 		 System.out.println("Thank you for booking......Your room number is "+ roomnum);
-		 booked[r]=1;
+		// booked[rmn]=1;
+		// rmn++;
 	 }
 
 }

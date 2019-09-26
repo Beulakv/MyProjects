@@ -24,8 +24,8 @@ public class Main {
 	      String proofType;
 	      String proofId;
 	      String w1 = null,r,e;
-	      int choice=0;
-	      
+	      int choice=0,rmn=0;
+	       int booked[]=new int[25];
 	  	  ViewCustomer vc=new ViewCustomer();
 	      Register r1=new Register();
 	      Room rb=new Room();
@@ -51,12 +51,14 @@ public class Main {
 	 	    {
 	 	    	
 	 	    	rb.roombooking();
+	 	    	booked[rmn]=1;
+	 	    	rmn++;
 	 	    	break;
 	 	    }
 	 	    case 3:
 	 	    {
 	 	    	Check ch=new Check();
-	 	    	ch.check();
+	 	    	ch.check(booked);
 	 	    	break;
 	 	    }
 	 	    case 4:
