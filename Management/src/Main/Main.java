@@ -16,7 +16,7 @@ public class Main {
 	static int total_Days;
 	static double tariff;
 	static String roomType;
-	static double f,peak,lean;
+	static double f,total_price,lean;
 	static int peakcharge;
 	static int discount;
 	
@@ -47,7 +47,7 @@ public class Main {
 			System.out.println("Enter the tariff for single person");
 			tariff=Double.parseDouble(br.readLine());
 			b.setTariff(tariff);
-			peak=ps.roomBook(persons,total_Days,roomType,month,peakcharge,tariff);
+			total_price=ps.roomBook(persons,total_Days,roomType,month,peakcharge,tariff);
 		}
 		if(month==1||month==2||month==3||month==7||month==8||month==10)
 		{
@@ -56,11 +56,11 @@ public class Main {
 			System.out.println("Enter the tariff for single person");
 			tariff=Double.parseDouble(br.readLine());
 			b.setTariff(tariff);
-			peak=ls.roomBook(persons,total_Days,roomType,month,discount,tariff);
+			total_price=ls.roomBook(persons,total_Days,roomType,month,discount,tariff);
 		}
 		
 		//f=b.roomBooking(persons, total_Days, tariff, roomType);
-		System.out.println("Total price "+peak);
+		System.out.println("Total price "+total_price);
 		//System.out.println("Total price "+lean);
 
 	}
